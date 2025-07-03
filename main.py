@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from Routers import Auth
+from routers import Auth
 
 app = FastAPI()
 app.include_router(Auth.enrutador)
