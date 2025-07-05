@@ -6,9 +6,9 @@ from jose import JWTError, jwt
 from datetime import datetime, timedelta
 
 router = APIRouter()
-@router.get("/users")
-def get_users():
-    return {"message": "Usuarios de Vínkulo"}
+@router.get("/hola")
+def decir_hola():
+    return {"message": "Hola desde auth.py"}
 
 # En memoria simulamos una base de datos de usuarios
 fake_users_db = {}
